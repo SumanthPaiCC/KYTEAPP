@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Muli:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Circular Std");
+
+@font-face {
+  font-family: "Apercu Pro bolder";
+  src: url("./assets/fonts/Apercu\ Pro\ Bold.otf") format("truetype");
+  font-weight: normal;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: "Apercu Pro lighter";
+  src: url("./assets/fonts/Apercu\ Pro\ Light.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Apercu Pro lighter italic";
+  src: url("./assets/fonts/Apercu\ Pro\ Light\ Italic.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Apercu Pro bolder italic";
+  src: url("./assets/fonts/Apercu\ Pro\ Bold\ Italic.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Apercu Pro italic";
+  src: url("./assets/fonts/Apercu\ Pro\ Italic.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Apercu Pro medium";
+  src: url("./assets/fonts/Apercu\ Pro\ Medium.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Apercu Pro medium italic";
+  src: url("./assets/fonts/Apercu\ Pro\ Medium\ Italic.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Apercu Pro mono";
+  src: url("./assets/fonts/Apercu\ Pro\ Mono.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Apercu Pro regular";
+  src: url("./assets/fonts/Apercu\ Pro\ Regular.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Apercu Pro bolder", "Apercu Pro lighter",
+    "Apercu Pro lighter italic", "Apercu Pro bolder italic", "Apercu Pro italic",
+    "Apercu Pro medium", "Apercu Pro medium italic","Apercu Pro mono" ,"Apercu Pro regular", "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
