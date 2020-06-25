@@ -6,12 +6,14 @@ import NoRoute from "./components/NoRoute";
 import Register from "./components/Register";
 import Login from "./components/Login";
 import AuthCheck from "./AuthCheck";
+import Sidebar from "./common/Sidebar";
 function App() {
   return (
       <Router history={history}>
       <Switch>
         <Route path="/register" exact component={Register} />
         <Route path="/login" exact component={Login} />
+        <Route path="/sidebar" exact component={Sidebar} />
         <Redirect from="/" to="/register" component={Register} exact />
         <Route path="/*" component={NoRoute} />
       </Switch>

@@ -1,0 +1,144 @@
+.vertical-nav {
+  width: 280px;
+  height: 100vh;
+  left: 0px;
+  top: 0px;
+
+  /* white */
+
+  background: #ffffff;
+  box-shadow: 0px 3px 16px #eef1f6;
+  border-radius: 4px;
+
+  .side-logo {
+    width: 130px;
+    height: 40px;
+    left: 22px;
+    padding: 20px;
+    top: 20px;
+  }
+
+  .prof-cont {
+    display: flex;
+
+    .prof-icon {
+      width: 100%;
+      height: 60px;
+      left: 23px;
+      top: 209px;
+      padding: 20px;
+      margin-top: 20%;
+    }
+    .prof-name {
+      width: 100%;
+      /* height: 20px; */
+      /* left: 91px; */
+      /* top: 20%; */
+      font-family: Apercu Pro medium;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      padding: 20px;
+      color: #333333;
+      margin-left: -40%;
+      margin-top: 25%;
+
+      .emailtext {
+        position: relative;
+        font-family: Apercu Pro medium;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 15px;
+        /* identical to box height */
+
+        /* Gray 3 */
+
+        color: #828282;
+      }
+    }
+  }
+
+  .list-cont {
+    display: flex;
+    flex-direction: column;
+
+    ul {
+      text-decoration: none;
+      list-style: none;
+      margin-top: 30px;
+      li {
+        padding: 20px;
+        font-family: Apercu Pro medium;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: #4f4f4f;
+        margin-left: -10%;
+      }
+    }
+  }
+
+  .nav-item-cont{
+        display: flex;
+        padding: 5px;
+  }
+
+  .events-icon {
+    width: 24px;
+    height: 24px;
+    left: 38px;
+    top: 242px;
+  }
+
+  .payments-icon {
+    width: 24px;
+    height: 24px;
+    left: 38px;
+    top: 302px;
+  }
+  .profile-icon {
+    width: 24px;
+    height: 24px;
+    left: 38px;
+    top: 362px;
+  }
+
+  .help-icon {
+    width: 24px;
+    height: 24px;
+    left: 38px;
+    top: 422px;
+  }
+
+  .logout {
+    margin-top: 200px;
+  }
+
+  .logout-icon {
+    width: 24px;
+    height: 24px;
+    left: 38px;
+    top: 712px;
+  }
+
+  .nav-item {
+    padding-bottom: 2px;
+  }
+
+  .nav-link i {
+    margin-right: 14px;
+  }
+  .nav-link:hover {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: red;
+  }
+  .nav-link:active {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: green;
+  }
+}
