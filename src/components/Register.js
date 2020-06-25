@@ -4,7 +4,16 @@ import webimg from "../assets/webintro.svg";
 import mobimg from "../assets/mobintro.svg";
 import dots from "../assets/dots.svg";
 import kytelogo from "../assets/kytelogo.svg";
+//import history from '../history'
+import {withRouter } from "react-router-dom";
 class Register extends Component {
+  constructor(props){
+    super(props);
+    this.toLogin=this.toLogin.bind(this)
+  }
+  toLogin=()=>{
+    this.props.history.push('/login')
+  }
   render() {
     return (
       <div>
@@ -35,7 +44,7 @@ class Register extends Component {
           <div className="col-md-6">
             <div className="signupContainer">
               <label className="labeltxt">Already have an account?</label>
-              <button className="logbutton">
+              <button className="logbutton" onClick={this.toLogin}>
                 <div className="logbuttonText">Login</div>
               </button>
               <div className="logo">
@@ -71,4 +80,4 @@ class Register extends Component {
   }
 }
 
-export default Register;
+export default withRouter(Register);

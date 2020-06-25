@@ -4,7 +4,22 @@ import webimg from "../assets/webintro.svg";
 import mobimg from "../assets/mobintro.svg";
 import dots from "../assets/dots.svg";
 import kytelogo from "../assets/kytelogo.svg";
+import history from '../history'
+import { Router, Route, Switch, Redirect,withRouter } from "react-router-dom";
 class Login extends Component {
+    constructor(props){
+        super(props);
+
+
+        
+    }
+    toSignUp=()=>{
+        this.props.history.push('/register')
+       
+           {/* <Redirect from="/login" to="/register" exact/> */}
+     console.log('tosignup')
+        
+    }
   render() {
     return (
       <div>
@@ -36,7 +51,7 @@ class Login extends Component {
             <div className="signupContainer">
               <label className="labeltxt">Dont have an account?</label>
               <button className="logbutton">
-                <div className="logbuttonText">Sign Up</div>
+                <div className="logbuttonText" onClick={this.toSignUp}>Sign Up</div>
               </button>
               <div className="logo">
                 <img src={kytelogo} alt="logo" />
@@ -69,4 +84,4 @@ class Login extends Component {
   }
 }
 
-export default Login;
+export default withRouter(Login);
