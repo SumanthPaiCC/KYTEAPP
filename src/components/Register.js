@@ -4,7 +4,7 @@ import webimg from "../assets/webintro.svg";
 import mobimg from "../assets/mobintro.svg";
 import dots from "../assets/dots.svg";
 import kytelogo from "../assets/kytelogo.svg";
-export class Register extends Component {
+class Register extends Component {
   render() {
     return (
       <div>
