@@ -2,33 +2,26 @@
   display: flex;
   background-color: #f5f5f5;
   height: 100vh;
-  width: 100%;
-  vertical-align: auto;
-  justify-content: center;
+  width: 100vw;
+  margin-left: -23%;
   .eventext {
-    width: 97px;
-    height: 40px;
-    left: 310px;
-    top: 68px;
-
-    font-family: Apercu Pro;
+    
+    margin-left: 2%;
+    font-family: Apercu Pro bolder;
     font-style: normal;
     font-weight: bold;
     font-size: 32px;
     line-height: 40px;
-    /* identical to box height */
-
-    /* Gray 2 */
-
     color: #4f4f4f;
+    margin-top: 5%;
   }
-
+  .spbutton{
+    margin-left: 55%;
+    margin-top: 5.5%;
+  }
   .evebutton {
-    left: 85%;
-    right: 6.94%;
-    top: 6.74%;
-    bottom: 89.65%;
-
+    
+    
     /* orange */
 
     background: #f15a29;
@@ -40,7 +33,7 @@
       top: 27.03%;
       bottom: 27.03%;
 
-      font-family: Apercu Pro;
+      font-family: Apercu Pro bolder;
       font-style: normal;
       font-weight: bold;
       font-size: 14px;

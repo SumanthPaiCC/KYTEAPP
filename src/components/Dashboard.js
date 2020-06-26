@@ -8,7 +8,7 @@ class Dashboard extends Component {
         <Layout>
           <div className='head-container'>
             <div className='eventext'>Events</div>
-            <div>
+            <div className='spbutton'>
               <button className='evebutton'><span className='btext'>Create Event</span></button>
             </div>
           </div>
