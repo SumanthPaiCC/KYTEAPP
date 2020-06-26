@@ -82,19 +82,22 @@
         background: #f6effe;
         border-radius: 6px;
         color: #811ef4;
+        /* background-image: url('../assets/eve.svg'); */
+        
       }
-      li:hover{
+      li:hover {
         background: #f6effe;
         border-radius: 6px;
         color: #811ef4;
+        /* background-image: url('../assets/eve.svg'); */
       }
-      i:active {
-        img {
-          color: #811ef4;
-        }
-      }
-      
     }
+   /*  i:active{
+      color: #811ef4;
+    }
+    i:hover{
+      color: #811ef4;
+    } */
   }
 
   .nav-item-cont {

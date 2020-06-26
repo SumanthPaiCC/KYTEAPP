@@ -65,6 +65,7 @@ class Sidebar extends Component {
                 <div className="nav-item-cont">
                   <div>
                     <Link>
+                    
                       <i>
                         <img src={acc} alt="acc" />
                       </i>
