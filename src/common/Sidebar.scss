@@ -79,49 +79,27 @@
         margin-left: -10%;
       }
       li:active {
-        /* width: 236px;
-        height: 44px;
-        left: 22px;
-        top: 232px; */
-
-        /* light purple */
-
         background: #f6effe;
         border-radius: 6px;
+        color: #811ef4;
       }
+      li:hover{
+        background: #f6effe;
+        border-radius: 6px;
+        color: #811ef4;
+      }
+      i:active {
+        img {
+          color: #811ef4;
+        }
+      }
+      
     }
   }
 
   .nav-item-cont {
     display: flex;
     padding: 5px;
-  }
-
-  .events-icon {
-    width: 24px;
-    height: 24px;
-    left: 38px;
-    top: 242px;
-  }
-
-  .payments-icon {
-    width: 24px;
-    height: 24px;
-    left: 38px;
-    top: 302px;
-  }
-  .profile-icon {
-    width: 24px;
-    height: 24px;
-    left: 38px;
-    top: 362px;
-  }
-
-  .help-icon {
-    width: 24px;
-    height: 24px;
-    left: 38px;
-    top: 422px;
   }
 
   .logout {
@@ -133,23 +111,5 @@
     height: 24px;
     left: 38px;
     top: 712px;
-  }
-
-  .nav-item {
-    padding-bottom: 2px;
-  }
-
-  .nav-link i {
-    margin-right: 14px;
-  }
-  .nav-link:hover {
-    display: block;
-    padding: 0.5rem 1rem;
-    color: red;
-  }
-  .nav-link:active {
-    display: block;
-    padding: 0.5rem 1rem;
-    color: green;
   }
 }
