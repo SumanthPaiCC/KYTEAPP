@@ -4,22 +4,18 @@ import webimg from "../assets/webintro.svg";
 import mobimg from "../assets/mobintro.svg";
 import dots from "../assets/dots.svg";
 import kytelogo from "../assets/kytelogo.svg";
-import history from '../history'
-import { Router, Route, Switch, Redirect,withRouter } from "react-router-dom";
+//import history from "../history";
+import {withRouter } from "react-router-dom";
 class Login extends Component {
-    constructor(props){
-        super(props);
-
-
-        
-    }
-    toSignUp=()=>{
-        this.props.history.push('/register')
-       
-           {/* <Redirect from="/login" to="/register" exact/> */}
-     console.log('tosignup')
-        
-    }
+  constructor(props) {
+    super(props);
+  }
+  toSignUp = () => {
+    this.props.history.push("/register");
+  };
+  toLogin = () => {
+    this.props.history.push("/dashboard");
+  };
   render() {
     return (
       <div>
@@ -51,7 +47,9 @@ class Login extends Component {
             <div className="signupContainer">
               <label className="labeltxt">Dont have an account?</label>
               <button className="logbutton">
-                <div className="logbuttonText" onClick={this.toSignUp}>Sign Up</div>
+                <div className="logbuttonText" onClick={this.toSignUp}>
+                  Sign Up
+                </div>
               </button>
               <div className="logo">
                 <img src={kytelogo} alt="logo" />
@@ -66,11 +64,9 @@ class Login extends Component {
                     placeholder="Enter your Password"
                     type="password"
                   ></input>
-                <div className="forgotpwd">
-                    Forgot Password?
-                </div>
+                  <div className="forgotpwd">Forgot Password?</div>
                   <div>
-                    <button className="submitButton">
+                    <button className="submitButton" onClick={this.toLogin}>
                       <div className="text">Login</div>
                     </button>
                   </div>

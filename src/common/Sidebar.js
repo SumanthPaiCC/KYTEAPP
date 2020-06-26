@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import { Link,withRouter} from "react-router-dom";
 import "./Sidebar.scss";
 import sidelogo from "../assets/sidelogo.svg";
 import mask from "../assets/Mask Group.svg";
@@ -11,6 +11,11 @@ import eve2 from "../assets/eve2.svg";
 class Sidebar extends Component {
   constructor(props) {
     super(props);
+  }
+  toLogout=()=>{
+    localStorage.clear()
+    this.props.history.push('/login')
+
   }
   render() {
     return (
@@ -84,7 +89,7 @@ class Sidebar extends Component {
                   </div>
                 </div>
               </li>
-              <li className="logout">
+              <li className="logout" onClick={this.toLogout}>
                 <div className="nav-item-cont">
                   <div>
                     <Link>
@@ -106,4 +111,4 @@ class Sidebar extends Component {
   }
 }
 
-export default Sidebar;
+export default withRouter(Sidebar);
